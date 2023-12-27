@@ -61,6 +61,10 @@ html , body{
     font-size: 6vw;
     font-weight: 700;
 }
+
+.headings h1:hover{
+    color: #000;
+}
 .homelast{
     display: block;
     width: 70%;
@@ -135,7 +139,11 @@ html , body{
 .fright .images{
     width: 90%;
     height: 95%;
-    background-color: aquamarine;
+}
+.fright .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .viewaalprobtn{
     display: flex;
@@ -144,7 +152,7 @@ html , body{
     margin-top: 20px;
 }
 .viewaalprobtn button{
-    padding: 20px 35px;
+    padding: 15px 35px;
     border-radius: 50px;
     border: 2px solid #e6e6e6;
     background-color: #fff;
@@ -170,20 +178,24 @@ html , body{
 .slides{
     display: flex;
     justify-content: center;
+    padding: 0 6vw;
     align-items: center;
     gap: 5px;
 }
 .slides .card{
-    height: 330px;
-    width: 420px;
-    padding: 30px;
+    height: 280px;
+    width: 400px;
+    padding: 10px;
 }
 .slides .card img{
     width: 100%;
-    height: 80%;
+    height: 90%;
+    object-fit: cover;
     border-radius: 20px;
 }
 .slides .card h5{
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
     font-size: 18px;
 }
