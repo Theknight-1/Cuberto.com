@@ -1,6 +1,8 @@
 Shery.mouseFollower();
 Shery.makeMagnet('.magnet');
 Shery.hoverWithMediaCircle(".hvr",{ videos : ['./video/0.mp4','./video/2.mp4','./video/03.mp4']})
+Shery.makeMagnet('.featured h1')
+
 
 gsap.to(".fleftelem",{
     scrollTrigger:{

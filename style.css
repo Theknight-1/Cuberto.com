@@ -193,9 +193,88 @@ html , body{
     object-fit: cover;
     border-radius: 20px;
 }
+.slides .card img:hover{
+    transition: transform 0.3s ease;
+}
+.slides .card img:hover{
+    transform: scale(1.03);
+}
 .slides .card h5{
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 18px;
 }
+
+.footer-bottom{
+    position: relative;
+    height: 60vh;
+    max-width: 100vw;
+    background-color: #000;
+    margin-top: 3rem;
+}
+.flotBox{
+    position: absolute;
+    width: 100%;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: red; */
+}
+.marqueeScroller{
+    display: flex;
+    gap: 1rem;
+    gap: 5rem;
+}
+.marqueeScroller-innner{
+    display: flex ;
+    align-items: center;
+    gap: 2rem;
+}
+.marqueeScroller-innner h1{
+    font-size: 7.6rem;
+    font-weight: 100;
+}
+.videoCover {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    animation: rotate 7s linear infinite;
+  }
+  .videoCover>h1{
+    position: absolute;
+    color: #fff;
+    font-size: 7.6rem;
+    font-weight: 100;
+  }
+
+  .videoCover video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .videoCover img {
+    position: absolute;
+    display: inline-block;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
