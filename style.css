@@ -278,3 +278,56 @@ html , body{
       transform: rotate(360deg);
     }
   }
+
+
+
+  .pageLast{
+    max-width: 100vw;
+    height: 100vh;
+    background-color:#000;
+    color:white;    
+  }
+  .pageLast > h1{
+    padding: 2rem;
+    font-size: 17px;
+  }
+  .pageLast-inner{
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  .pageLast-innner-moving{
+    position: relative;
+  }
+  .moving-social-media{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 0%;
+    background-color: #e6e6e6;
+    transition: all ease .5s;
+  }
+  .pageLast-innner-moving:hover .moving-social-media{
+    height: 100%;
+  }
+  .social-media{
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+  .social-media>h1{
+    margin-left: 2rem;
+    font-weight: 200;
+    font-size: 2rem;
+  }
+  .social-media>svg{
+    height: 2rem;
+    transform: rotate(-90deg);
+    margin-right: 2rem;
+  }
